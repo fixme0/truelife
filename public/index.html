@@ -13,14 +13,20 @@
             <svg class="header-nav-logo__icon">
               <use xlink:href="sprite.svg#truelife-logo"></use>
             </svg></a>
-          <ul class="header-nav-list">
-            <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".hero">главная</a></li>
-            <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".ideology">идеология</a></li>
-            <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".keyDirections">направления</a></li>
-            <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".community">сообщество</a></li>
-            <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".place">пространство</a></li>
-            <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".afisha">мероприятия</a></li>
-          </ul>
+          <div class="header-nav-wrapper">
+            <ul class="header-nav-list">
+              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".hero">главная</a></li>
+              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".ideology">идеология</a></li>
+              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".keyDirections">направления</a></li>
+              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".community">сообщество</a></li>
+              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".place">пространство</a></li>
+              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".afisha">мероприятия</a></li>
+            </ul>
+            <ul class="header-nav-wrapper-list">
+              <li class="header-nav-wrapper-list-item"><a class="header-nav-wrapper-list-item__link" href="#">facebook</a></li>
+              <li class="header-nav-wrapper-list-item"><a class="header-nav-wrapper-list-item__link" href="#">instagram</a></li>
+            </ul>
+          </div>
           <button class="header-nav-btn" type="button">
             <svg class="header-nav-btn__svg">
               <use xlink:href="sprite.svg#menu"></use>
@@ -341,27 +347,27 @@
           <p class="connect__title">Заявка на вступление</p>
           <form class="connect-form">
             <div class="connect-form-list">
-              <div class="input-field connect-form-field connect-form-field--md">
+              <div class="input-field connect-form-field connect-form-field--md ">
                 <label class="input-field-label"><span class="input-field-label__text">Ваше имя</span>
                   <input class="input-field-controll" type="text" placeholder="Как вас зовут?">
                 </label>
               </div>
-              <div class="input-field connect-form-field connect-form-field--md">
+              <div class="input-field connect-form-field connect-form-field--md ">
                 <label class="input-field-label"><span class="input-field-label__text">Ваша фамилия</span>
                   <input class="input-field-controll" type="text" placeholder="Какая у вас фамилия?">
                 </label>
               </div>
-              <div class="input-field connect-form-field connect-form-field--md">
+              <div class="input-field connect-form-field connect-form-field--md ">
                 <label class="input-field-label"><span class="input-field-label__text">Рекомендация</span>
                   <input class="input-field-controll" type="text" placeholder="ФИО участника клуба">
                 </label>
               </div>
-              <div class="input-field connect-form-field connect-form-field--lg">
+              <div class="input-field connect-form-field connect-form-field--lg ">
                 <label class="input-field-label"><span class="input-field-label__text">Ваш e-mail</span>
                   <input class="input-field-controll" type="text" placeholder="">
                 </label>
               </div>
-              <div class="input-field connect-form-field connect-form-field--lg">
+              <div class="input-field connect-form-field connect-form-field--lg ">
                 <label class="input-field-label"><span class="input-field-label__text">Ваш телефон</span>
                   <input class="input-field-controll" type="text" placeholder="Ваш контактный телефон">
                 </label>
@@ -446,5 +452,54 @@
         </div>
       </section>
     </main>
-  <script type="text/javascript" src="main.js?8c63aaf5c1574240a4e0"></script></body>
+    <div class="modal" id="form-modal">
+      <div class="modal-container">
+        <button class="modal-container-close-btn" type="button" data-close-modal>
+          <svg class="modal-container-close-btn__icon">
+            <use xlink:href="sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+        <div class="modal-container-part-one" style="background-image: url('images/modal-form-bg.jpg')">
+          <p class="modal-container-part-one__title">станьте членом клуба прямо сейчас</p>
+          <p class="modal-container-part-one-text">
+            <svg class="modal-container-part-one-text__icon">
+              <use xlink:href="sprite.svg#checked"></use>
+            </svg><span class="modal-container-part-one-text__content">Нажимая на кнопку «Отправить заявку»<br>я соглашаюсь с условиями передачи данных</span>
+          </p>
+        </div>
+        <div class="modal-container-part-two">
+          <form class="modal-container-part-two-form">
+            <div class="input-field modal-container-part-two-form__field modal-container-part-two-form__field--sm modal-container-part-two-form__field--offset input-field--dark">
+              <label class="input-field-label"><span class="input-field-label__text">Ваше имя</span>
+                <input class="input-field-controll" type="text" placeholder="Как вас зовут?">
+              </label>
+            </div>
+            <div class="input-field modal-container-part-two-form__field modal-container-part-two-form__field--sm input-field--dark">
+              <label class="input-field-label"><span class="input-field-label__text">Ваша фамилия</span>
+                <input class="input-field-controll" type="text" placeholder="Какая у вас фамилия?">
+              </label>
+            </div>
+            <div class="input-field modal-container-part-two-form__field input-field--dark">
+              <label class="input-field-label"><span class="input-field-label__text">Рекомендация</span>
+                <input class="input-field-controll" type="text" placeholder="ФИО участника клуба">
+              </label>
+            </div>
+            <div class="input-field modal-container-part-two-form__field input-field--dark">
+              <label class="input-field-label"><span class="input-field-label__text">Ваш e-mail</span>
+                <input class="input-field-controll" type="text" placeholder="">
+              </label>
+            </div>
+            <div class="input-field modal-container-part-two-form__field input-field--dark">
+              <label class="input-field-label"><span class="input-field-label__text">Ваш телефон</span>
+                <input class="input-field-controll" type="text" placeholder="Ваш контактный телефон">
+              </label>
+            </div>
+            <div class="btn modal-container-part-two-form__btn">
+              <input type="submit" value="отправить заявку">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="main.js?c74fd771fe4e796ca877"></script></body>
 </html>
