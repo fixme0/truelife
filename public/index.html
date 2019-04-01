@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  <link href="main.b53f521d47e636b9b113.css" rel="stylesheet"></head>
+  <link href="main.6532123a8a15016bedcb.css" rel="stylesheet"></head>
   <body>
     <header class="header light-theme">
       <div class="container">
@@ -183,38 +183,18 @@
       <section class="section community" style="background-image: url('images/community-bg.jpg')">
         <div class="container container--offset">
           <p class="section__info">сообщество truelife</p>
-          <ul class="community-nav">
-            <li class="community-nav-item active">
-              <button class="community-nav-item__btn" type="button">амбассадоры</button>
-            </li>
-            <li class="community-nav-item">
-              <button class="community-nav-item__btn" type="button">члены клуба</button>
-            </li>
-          </ul>
+          <div class="swiper-container community-nav-slider">
+            <ul class="community-nav swiper-wrapper">
+              <li class="community-nav-item active swiper-slide">
+                <button class="community-nav-item__btn" type="button">амбассадоры</button>
+              </li>
+              <li class="community-nav-item swiper-slide">
+                <button class="community-nav-item__btn" type="button">члены клуба</button>
+              </li>
+            </ul>
+          </div>
           <p class="community__text active">Амбассадоры клуба — послы развития и самосовершенствования. Люди, которых не страшит возможность ошибаться и рисковать. Личности, у которых не стыдно учиться.</p>
           <ul class="community-list active owl-carousel">
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
             <li class="community-list-item"><a class="community-list-item__btn" href="#">
                 <p class="community-list-item__text">Test<br>Test</p></a></li>
             <li class="community-list-item"><a class="community-list-item__btn" href="#">
@@ -242,28 +222,6 @@
             </div>
           </div>
           <ul class="community-list owl-carousel">
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
-            <li class="community-list-item"><a class="community-list-item__btn" href="#">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
             <li class="community-list-item"><a class="community-list-item__btn" href="#">
                 <p class="community-list-item__text">Test<br>Test</p></a></li>
             <li class="community-list-item"><a class="community-list-item__btn" href="#">
@@ -496,8 +454,65 @@
       <section class="section bonus">
         <div class="container container--offset">
           <p class="section__info">бонусы для участников</p>
-          <div class="bonus-navigation"><a class="bonus-navigation__btn active" href="#">партнеры <br>клуба</a><a class="bonus-navigation__btn" href="#">программа <br>лояльности</a></div>
+          <div class="swiper-container bonus-nav-slider">
+            <div class="bonus-navigation swiper-wrapper"><a class="bonus-navigation__btn active swiper-slide" href="#">партнеры <br>клуба</a><a class="bonus-navigation__btn swiper-slide" href="#">программа <br>лояльности</a></div>
+          </div>
           <p class="bonus__text">Партнерские программы от друзей клуба. Получаем удовольствие от сотрудничества!</p>
+          <div class="swiper-container bonus-slider active">
+            <ul class="bonus-list swiper-wrapper">
+              <li class="bonus-list-item swiper-slide"><img class="bonus-list-item__bg" src="images/hero-item-1.png" alt="item"><img class="bonus-list-item__logo" src="images/partners-logo.svg">
+                <div class="bonus-list-item-info">
+                  <p class="bonus-list-item-info__tag">#турагентство</p>
+                  <p class="bonus-list-item-info__title">Партнерская<br>компания</p>
+                </div>
+              </li>
+              <li class="bonus-list-item swiper-slide"><img class="bonus-list-item__bg" src="images/hero-item-1.png" alt="item"><img class="bonus-list-item__logo" src="images/partners-logo.svg">
+                <div class="bonus-list-item-info">
+                  <p class="bonus-list-item-info__tag">#турагентство</p>
+                  <p class="bonus-list-item-info__title">Партнерская<br>компания</p>
+                </div>
+              </li>
+              <li class="bonus-list-item swiper-slide"><img class="bonus-list-item__bg" src="images/hero-item-1.png" alt="item"><img class="bonus-list-item__logo" src="images/partners-logo.svg">
+                <div class="bonus-list-item-info">
+                  <p class="bonus-list-item-info__tag">#турагентство</p>
+                  <p class="bonus-list-item-info__title">Партнерская<br>компания</p>
+                </div>
+              </li>
+              <li class="bonus-list-item swiper-slide"><img class="bonus-list-item__bg" src="images/hero-item-1.png" alt="item"><img class="bonus-list-item__logo" src="images/partners-logo.svg">
+                <div class="bonus-list-item-info">
+                  <p class="bonus-list-item-info__tag">#турагентство</p>
+                  <p class="bonus-list-item-info__title">Партнерская<br>компания</p>
+                </div>
+              </li>
+              <li class="bonus-list-item swiper-slide"><img class="bonus-list-item__bg" src="images/hero-item-1.png" alt="item"><img class="bonus-list-item__logo" src="images/partners-logo.svg">
+                <div class="bonus-list-item-info">
+                  <p class="bonus-list-item-info__tag">#турагентство</p>
+                  <p class="bonus-list-item-info__title">Партнерская<br>компания</p>
+                </div>
+              </li>
+              <li class="bonus-list-item swiper-slide"><img class="bonus-list-item__bg" src="images/hero-item-1.png" alt="item"><img class="bonus-list-item__logo" src="images/partners-logo.svg">
+                <div class="bonus-list-item-info">
+                  <p class="bonus-list-item-info__tag">#турагентство</p>
+                  <p class="bonus-list-item-info__title">Партнерская<br>компания</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bonus-slider-nav">
+            <div class="pagination bonus-slider-nav-pagination"></div>
+            <div class="sliderBtn bonus-slider-nav-sliderBtn ">
+              <button class="sliderBtn-btn sliderBtn-btn--prev" type="button">
+                <svg class="sliderBtn-btn__icon">
+                  <use xlink:href="sprite.svg#back-arrow"></use>
+                </svg>
+              </button>
+              <button class="sliderBtn-btn sliderBtn-btn--next" type="button">
+                <svg class="sliderBtn-btn__icon">
+                  <use xlink:href="sprite.svg#back-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
           <div class="swiper-container bonus-slider">
             <ul class="bonus-list swiper-wrapper">
               <li class="bonus-list-item swiper-slide"><img class="bonus-list-item__bg" src="images/hero-item-1.png" alt="item"><img class="bonus-list-item__logo" src="images/partners-logo.svg">
@@ -630,5 +645,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="main.js?b53f521d47e636b9b113"></script></body>
+  <script type="text/javascript" src="main.js?6532123a8a15016bedcb"></script></body>
 </html>
