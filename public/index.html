@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  <link href="main.f60f94f8f8cfafd39011.css" rel="stylesheet"></head>
+  <link href="main.4ba210cd2bcbc97cb6be.css" rel="stylesheet"></head>
   <body>
     <header class="header light-theme">
       <div class="container">
-        <nav class="header-nav"><a class="header-nav-logo" href="#">
+        <nav class="header-nav"><a class="header-nav-logo" href="#" data-scroll-section=".hero">
             <svg class="header-nav-logo__icon">
               <use xlink:href="sprite.svg#truelife-logo"></use>
             </svg></a>
           <div class="header-nav-wrapper">
             <ul class="header-nav-list">
-              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".hero">главная</a></li>
               <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".ideology">идеология</a></li>
               <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".keyDirections">направления</a></li>
               <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".community">сообщество</a></li>
-              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".place">пространство</a></li>
               <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".afisha">мероприятия</a></li>
+              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".bonus">Партнеры</a></li>
+              <li class="header-nav-list-item"><a class="header-nav-list-item__link" href="#" data-scroll-section=".contact">Контакты</a></li>
             </ul>
             <ul class="header-nav-wrapper-list">
               <li class="header-nav-wrapper-list-item"><a class="header-nav-wrapper-list-item__link" href="#">facebook</a></li>
@@ -38,11 +38,6 @@
   <li class="social-list-item"><a class="social-list-item__link" href="#">youtube</a></li>
   <li class="social-list-item"><a class="social-list-item__link" href="#">instagram</a></li>
 </ul>
-        <button class="section-btn" type="button">
-          <svg class="section-btn__icon">
-            <use xlink:href="sprite.svg#down-arrow"></use>
-          </svg>
-        </button>
 <ul class="columns-list">
   <li class="columns-list__item">0</li>
   <li class="columns-list__item">1</li>
@@ -59,10 +54,8 @@
     </header>
     <main class="main" id="init">
       <section class="section hero active-section">
+        <iframe class="hero-video" src="https://www.youtube.com/embed/K2Qi2wXfQM8?rel=0&amp;modestbranding=1&amp;autohide=1&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=K2Qi2wXfQM8" frameborder="0" allowfullscreen></iframe>
         <div class="container hero-container">
-          <div class="hero-item__img" style="background-image: url(images/hero-item-1.png)"></div>
-          <div class="hero-item__img" style="background-image: url(images/hero-item-2.png)"></div>
-          <div class="hero-item__img" style="background-image: url(images/hero-item-3.png)"></div>
           <div class="swiper-container hero-slider">
             <div class="swiper-wrapper">
               <div class="hero-item swiper-slide">
@@ -76,14 +69,19 @@
               </div>
             </div>
           </div>
-          <div class="hero-link-list"><a class="hero-link-list-btn" href="#"><span class="hero-link-list-btn__text">посмотреть видео</span>
+          <div class="hero-link-list"><a class="hero-link-list-btn" href="#" data-open-modal="#modal-once-video"><span class="hero-link-list-btn__text">посмотреть видео</span>
               <svg class="hero-link-list-btn__icon">
                 <use xlink:href="sprite.svg#play-button"></use>
-              </svg></a><a class="hero-link-list-btn" href="#" data-open-modal="#form-modal"><span class="hero-link-list-btn__text">стать членом клуба</span>
+              </svg></a><a class="hero-link-list-btn" href="#" data-open-modal="#form-modal"><span class="hero-link-list-btn__text">Присоединиться к сообществу</span>
               <svg class="hero-link-list-btn__icon">
                 <use xlink:href="sprite.svg#plus"></use>
               </svg></a></div>
           <div class="hero-progressbar"></div>
+          <button class="section-btn" type="button" data-scroll-section=".ideology">
+            <svg class="section-btn__icon">
+              <use xlink:href="sprite.svg#down-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section ideology">
@@ -188,23 +186,40 @@
               <li class="community-nav-item active swiper-slide">
                 <button class="community-nav-item__btn" type="button">амбассадоры</button>
               </li>
-              <li class="community-nav-item swiper-slide">
-                <button class="community-nav-item__btn" type="button">члены клуба</button>
-              </li>
             </ul>
           </div>
           <p class="community__text active">Амбассадоры клуба — послы развития и самосовершенствования. Люди, которых не страшит возможность ошибаться и рисковать. Личности, у которых не стыдно учиться.</p>
           <ul class="community-list active owl-carousel">
             <li class="community-list-item"><a class="community-list-item__btn" href="#" data-youtube-id="w3KenQcX79M" data-open-modal="#video-modal" data-ambasador-name="Test Test" data-ambasador-text="Founder в Food Hall, Co-Owner в Belive, Founder в Ulichnaya Eda">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
+                <p class="community-list-item__text">
+                  <svg class="community-list-item__play">
+                    <use xlink:href="sprite.svg#play-button"></use>
+                  </svg><span>Test<br>Test</span>
+                </p></a></li>
             <li class="community-list-item"><a class="community-list-item__btn" href="#" data-youtube-id="w3KenQcX79M" data-open-modal="#video-modal" data-ambasador-name="Test Test" data-ambasador-text="Founder в Food Hall, Co-Owner в Belive, Founder в Ulichnaya Eda">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
+                <p class="community-list-item__text">
+                  <svg class="community-list-item__play">
+                    <use xlink:href="sprite.svg#play-button"></use>
+                  </svg><span>Test<br>Test</span>
+                </p></a></li>
             <li class="community-list-item"><a class="community-list-item__btn" href="#" data-youtube-id="w3KenQcX79M" data-open-modal="#video-modal" data-ambasador-name="Test Test" data-ambasador-text="Founder в Food Hall, Co-Owner в Belive, Founder в Ulichnaya Eda">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
+                <p class="community-list-item__text">
+                  <svg class="community-list-item__play">
+                    <use xlink:href="sprite.svg#play-button"></use>
+                  </svg><span>Test<br>Test</span>
+                </p></a></li>
             <li class="community-list-item"><a class="community-list-item__btn" href="#" data-youtube-id="w3KenQcX79M" data-open-modal="#video-modal" data-ambasador-name="Test Test" data-ambasador-text="Founder в Food Hall, Co-Owner в Belive, Founder в Ulichnaya Eda">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
+                <p class="community-list-item__text">
+                  <svg class="community-list-item__play">
+                    <use xlink:href="sprite.svg#play-button"></use>
+                  </svg><span>Test<br>Test</span>
+                </p></a></li>
             <li class="community-list-item"><a class="community-list-item__btn" href="#" data-youtube-id="w3KenQcX79M" data-open-modal="#video-modal" data-ambasador-name="Test Test" data-ambasador-text="Founder в Food Hall, Co-Owner в Belive, Founder в Ulichnaya Eda">
-                <p class="community-list-item__text">Test<br>Test</p></a></li>
+                <p class="community-list-item__text">
+                  <svg class="community-list-item__play">
+                    <use xlink:href="sprite.svg#play-button"></use>
+                  </svg><span>Test<br>Test</span>
+                </p></a></li>
           </ul>
           <div class="community-slider-nav">
             <div class="pagination community-slider-nav-pagination"></div>
@@ -250,54 +265,6 @@
           </div>
         </div>
       </section>
-      <section class="section place" style="background-image: url('images/space-bg.jpg')">
-        <div class="container container--offset place-container">
-          <div class="place-first-part">
-            <p class="section__info">место сообщества</p>
-            <p class="place-first-part__title">пространство truelife</p>
-            <p class="place-first-part__subTitle">В распоряжении участников клуба — локации для продуктивных встреч, мероприятия, и многое другое.</p><a class="place-first-part-btn" href="#" download><span class="place-first-part-btn__text">скачать план локации</span>
-              <svg class="place-first-part-btn__icon">
-                <use xlink:href="sprite.svg#map"></use>
-              </svg></a>
-          </div>
-          <div class="place-second-part">
-            <div class="swiper-container place-second-part-slider">
-              <div class="swiper-wrapper place-second-part-slider-wrapper">
-                <div class="swiper-slide place-second-part-slider-wrapper-slide"><img src="images/directions-item-1.png" alt="img"></div>
-                <div class="swiper-slide place-second-part-slider-wrapper-slide"><img src="images/directions-item-1.png" alt="img"></div>
-                <div class="swiper-slide place-second-part-slider-wrapper-slide"><img src="images/directions-item-1.png" alt="img"></div>
-              </div>
-            </div>
-            <div class="slider-nav place-second-part-nav">
-              <button class="slider-nav-btn slider-nav-btn--left" type="button">
-                <svg class="slider-nav-btn__icon">
-                  <use xlink:href="sprite.svg#right-arrow"></use>
-                </svg><span class="slider-nav-btn__text">назад</span>
-              </button>
-              <button class="slider-nav-btn slider-nav-btn--right" type="button"><span class="slider-nav-btn__text">вперед</span>
-                <svg class="slider-nav-btn__icon">
-                  <use xlink:href="sprite.svg#right-arrow"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="place-slider-nav">
-            <div class="pagination place-slider-nav-pagination light"></div>
-            <div class="sliderBtn place-slider-nav-sliderBtn sliderBtn--light">
-              <button class="sliderBtn-btn sliderBtn-btn--prev" type="button">
-                <svg class="sliderBtn-btn__icon">
-                  <use xlink:href="sprite.svg#back-arrow"></use>
-                </svg>
-              </button>
-              <button class="sliderBtn-btn sliderBtn-btn--next" type="button">
-                <svg class="sliderBtn-btn__icon">
-                  <use xlink:href="sprite.svg#back-arrow"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section afisha" style="background-image: url('images/events-bg.jpg')">
         <div class="container container--offset">
           <p class="section__info">афиша событий</p>
@@ -319,10 +286,7 @@
                 <p class="afisha-list-item__date">18 - 21 марта, 25 - 27 марта</p>
                 <div class="afisha-list-item-footer">
                   <p class="afisha-list-item-footer__title">Ораторское <br /> искусство</p>
-                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span>
-                    <svg class="afisha-list-item-footer-btn__icon">
-                      <use xlink:href="sprite.svg#info"></use>
-                    </svg></a>
+                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span></a>
                   <div class="afisha-list-item-footer-tag-list"><span class="afisha-list-item-footer-tag-list__link">#business</span><span class="afisha-list-item-footer-tag-list__link">#education</span>
                   </div>
                 </div>
@@ -331,10 +295,7 @@
                 <p class="afisha-list-item__date">17 марта</p>
                 <div class="afisha-list-item-footer">
                   <p class="afisha-list-item-footer__title">Партнерство. <br /> Переговоры. <br /> Команда</p>
-                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span>
-                    <svg class="afisha-list-item-footer-btn__icon">
-                      <use xlink:href="sprite.svg#info"></use>
-                    </svg></a>
+                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span></a>
                   <div class="afisha-list-item-footer-tag-list"><span class="afisha-list-item-footer-tag-list__link">#business</span><span class="afisha-list-item-footer-tag-list__link">#education</span>
                   </div>
                 </div>
@@ -343,10 +304,7 @@
                 <p class="afisha-list-item__date">12 - 15 апреля</p>
                 <div class="afisha-list-item-footer">
                   <p class="afisha-list-item-footer__title">Рафтинг</p>
-                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span>
-                    <svg class="afisha-list-item-footer-btn__icon">
-                      <use xlink:href="sprite.svg#info"></use>
-                    </svg></a>
+                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span></a>
                   <div class="afisha-list-item-footer-tag-list"><span class="afisha-list-item-footer-tag-list__link">#travel</span><span class="afisha-list-item-footer-tag-list__link">#sport</span>
                   </div>
                 </div>
@@ -355,10 +313,7 @@
                 <p class="afisha-list-item__date">18 - 21 марта, 25 - 27 марта</p>
                 <div class="afisha-list-item-footer">
                   <p class="afisha-list-item-footer__title">Ораторское <br /> искусство</p>
-                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span>
-                    <svg class="afisha-list-item-footer-btn__icon">
-                      <use xlink:href="sprite.svg#info"></use>
-                    </svg></a>
+                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span></a>
                   <div class="afisha-list-item-footer-tag-list"><span class="afisha-list-item-footer-tag-list__link">#business</span><span class="afisha-list-item-footer-tag-list__link">#education</span>
                   </div>
                 </div>
@@ -367,10 +322,7 @@
                 <p class="afisha-list-item__date">17 марта</p>
                 <div class="afisha-list-item-footer">
                   <p class="afisha-list-item-footer__title">Партнерство. <br /> Переговоры. <br /> Команда</p>
-                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span>
-                    <svg class="afisha-list-item-footer-btn__icon">
-                      <use xlink:href="sprite.svg#info"></use>
-                    </svg></a>
+                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span></a>
                   <div class="afisha-list-item-footer-tag-list"><span class="afisha-list-item-footer-tag-list__link">#business</span><span class="afisha-list-item-footer-tag-list__link">#education</span>
                   </div>
                 </div>
@@ -379,10 +331,7 @@
                 <p class="afisha-list-item__date">12 - 15 апреля</p>
                 <div class="afisha-list-item-footer">
                   <p class="afisha-list-item-footer__title">Рафтинг</p>
-                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span>
-                    <svg class="afisha-list-item-footer-btn__icon">
-                      <use xlink:href="sprite.svg#info"></use>
-                    </svg></a>
+                  <p class="afisha-list-item-footer__text">Продемонстрируй себя и взгляни на других. Познакомься c товарищами по духу и отыщи приятного собеседника. Учись и обучай...</p><a class="afisha-list-item-footer-btn" href="#"><span class="afisha-list-item-footer-btn__text">подробнее</span></a>
                   <div class="afisha-list-item-footer-tag-list"><span class="afisha-list-item-footer-tag-list__link">#travel</span><span class="afisha-list-item-footer-tag-list__link">#sport</span>
                   </div>
                 </div>
@@ -412,19 +361,14 @@
           <p class="connect__title">Заявка на вступление</p>
           <form class="connect-form">
             <div class="connect-form-list">
-              <div class="input-field connect-form-field connect-form-field--md ">
+              <div class="input-field connect-form-field connect-form-field--lg ">
                 <label class="input-field-label"><span class="input-field-label__text">Ваше имя</span>
                   <input class="input-field-controll" type="text" placeholder="Как вас зовут?">
                 </label>
               </div>
-              <div class="input-field connect-form-field connect-form-field--md ">
+              <div class="input-field connect-form-field connect-form-field--lg ">
                 <label class="input-field-label"><span class="input-field-label__text">Ваша фамилия</span>
                   <input class="input-field-controll" type="text" placeholder="Какая у вас фамилия?">
-                </label>
-              </div>
-              <div class="input-field connect-form-field connect-form-field--md ">
-                <label class="input-field-label"><span class="input-field-label__text">Рекомендация</span>
-                  <input class="input-field-controll" type="text" placeholder="ФИО участника клуба">
                 </label>
               </div>
               <div class="input-field connect-form-field connect-form-field--lg ">
@@ -455,7 +399,7 @@
         <div class="container container--offset">
           <p class="section__info">бонусы для участников</p>
           <div class="swiper-container bonus-nav-slider">
-            <div class="bonus-navigation swiper-wrapper"><a class="bonus-navigation__btn active swiper-slide" href="#">партнеры <br>клуба</a><a class="bonus-navigation__btn swiper-slide" href="#">программа <br>лояльности</a></div>
+            <div class="bonus-navigation swiper-wrapper"><a class="bonus-navigation__btn active swiper-slide" href="#">партнеры <br>клуба</a></div>
           </div>
           <p class="bonus__text">Партнерские программы от друзей клуба. Получаем удовольствие от сотрудничества!</p>
           <div class="swiper-container bonus-slider active">
@@ -577,9 +521,9 @@
           <ul class="contact-list">
             <li class="contact-list-item contact-list-item--phone"><a class="contact-list-item__link" href="tel: +380991234567">+380 99 123 45 67</a></li>
             <li class="contact-list-item contact-list-item--mail"><a class="contact-list-item__link" href="mailto: info@truelife.club">info@truelife.club</a></li>
-            <li class="contact-list-item contact-list-item--adress"><span class="contact-list-item__link">Киев, улица Крещатик 1</span></li>
+            <li class="contact-list-item contact-list-item--adress"><a class="contact-list-item__link" href="" target="_blanc">Киев, улица Крещатик 1</a></li>
           </ul>
-          <div class="btn contact__btn"><a href="#">открыть в google картах</a>
+          <div class="btn contact__btn"><a href="#" data-open-modal="#form-modal">присоединиться к сообществу</a>
           </div>
           <footer class="contact-footer">
             <ul class="contact-footer-list">
@@ -588,6 +532,11 @@
               <li class="contact-footer-list-item"><a class="contact-footer-list-item__link" href="#">Соглашение с рассылкой</a></li>
             </ul><a class="contact-footer-creater"><span class="contact-footer-creater__name">Создано вместе с</span><img class="contact-footer-creater__logo" src="images/takasho-logo-footer.svg" alt="takasho-agency"><span class="contact-footer-creater__name contact-footer-creater__name--lg-hidden">в Киеве в 2019 году</span></a>
           </footer>
+          <button class="section-btn section-btn--rotate" type="button" data-scroll-section=".hero">
+            <svg class="section-btn__icon">
+              <use xlink:href="sprite.svg#down-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
     </main>
@@ -616,11 +565,6 @@
             <div class="input-field modal-container-part-two-form__field modal-container-part-two-form__field--sm input-field--dark">
               <label class="input-field-label"><span class="input-field-label__text">Ваша фамилия</span>
                 <input class="input-field-controll" type="text" placeholder="Какая у вас фамилия?">
-              </label>
-            </div>
-            <div class="input-field modal-container-part-two-form__field input-field--dark">
-              <label class="input-field-label"><span class="input-field-label__text">Рекомендация</span>
-                <input class="input-field-controll" type="text" placeholder="ФИО участника клуба">
               </label>
             </div>
             <div class="input-field modal-container-part-two-form__field input-field--dark">
@@ -669,5 +613,15 @@
         </ul>
       </div>
     </div>
-  <script type="text/javascript" src="main.js?f60f94f8f8cfafd39011"></script></body>
+    <div class="modal" id="modal-once-video">
+      <div class="modal-container modal-container--video">
+        <button class="modal-container-close-btn" type="button" data-close-modal>
+          <svg class="modal-container-close-btn__icon">
+            <use xlink:href="sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+        <iframe class="modal-container-once-video" src="https://www.youtube.com/embed/K2Qi2wXfQM8?&amp;showinfo=0&amp;enablejsapi=1&amp;version=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  <script type="text/javascript" src="main.js?4ba210cd2bcbc97cb6be"></script></body>
 </html>
